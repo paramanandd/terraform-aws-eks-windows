@@ -55,7 +55,7 @@ No Modules.
 | endpoint\_public\_access | Indicates whether or not the Amazon EKS public API server endpoint is enabled. Default to AWS EKS resource and it is true | `bool` | `true` | no |
 | force\_update\_version | Force version update if existing pods are unable to be drained | `bool` | `false` | no |
 | instance\_types | List of instance types associated with the EKS Node Group | `list(any)` | <pre>[<br>  "t3.medium"<br>]</pre> | no |
-| key\_name | The key name to use for the instance | `string` | `"eks_test-demo_shyam"` | no |
+| key\_name | The key name to use for the instance | `string` | `"demo"` | no |
 | kubelet\_extra\_args | This will make sure to taint your nodes at the boot time to avoid scheduling any existing resources in the new Windows worker nodes | `string` | `"--register-with-taints='os=windows:NoSchedule'"` | no |
 | kubernetes\_version | Desired Kubernetes master version. If you do not specify a value, the latest available version is used | `string` | `"1.19"` | no |
 | linux\_node\_group\_name | Name of the linux node group | `string` | `"DEMO"` | no |
