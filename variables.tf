@@ -178,7 +178,7 @@ variable "win_max_size" {
 variable "key_name" {
   description = "The key name to use for the instance"
   type        = string
-  default     = "eks_test-demo_shyam"
+  default     = "demo"
 }
 
 variable "lt_name" {
@@ -206,8 +206,8 @@ variable "kubelet_extra_args" {
 }
 
 locals {
-    vpc_id     = "vpc-01d2fdd6864631258"
-    subnet_ids = ["subnet-05ebf2aeaf885f631","subnet-0575e196b4465423f"]
+    vpc_id     = "vpc-XXXXXXXX"
+    subnet_ids = ["subnet-XXXXXX","subnet-XXXXXXX"]
     public_access_cidrs = ["0.0.0.0/0"]
 }
 
